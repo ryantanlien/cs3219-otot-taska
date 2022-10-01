@@ -1,0 +1,12 @@
+services:
+  node:
+    image: e0543529/taska1.1-app
+    ports: 
+    - "8080:8080"
+    build: ../app
+  reverse-proxy:
+    depends_on:
+      - node
+    image: e0543529/taska1.3-nginx
+    ports:
+    - "80:80"
