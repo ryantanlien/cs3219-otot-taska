@@ -10,3 +10,4 @@ services:
     image: e0543529/taska1.3-nginx
     ports:
     - "80:80"
+    build: ../nginx
