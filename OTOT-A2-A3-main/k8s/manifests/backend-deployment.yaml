@@ -16,10 +16,10 @@ spec:
     spec:
       containers:
         - name: backend
-          image: ryantanlien99/ryantanlien99-repo:nginx-sample
+          image: ryantanlien99/ryantanlien99-repo:app
           ports:
             - name: http
-              containerPort: 80
+              containerPort: 8080
           resources:
             limits:
               cpu: 40m
